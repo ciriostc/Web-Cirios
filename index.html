@@ -310,6 +310,75 @@
     margin-bottom: 3px;
   }
 }
+    /* Logo de la cabecera */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 50px;
+  max-width: 230px;
+  object-fit: contain;
+}
+
+/* Oculta la llama anterior, si sigue existiendo en algún punto */
+.flame {
+  display: none;
+}
+
+/* Logo en el footer */
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  background: #fffaf4;
+  border-radius: 12px;
+  line-height: 0;
+}
+
+.footer-logo {
+  display: block;
+  width: auto;
+  height: 44px;
+  max-width: 205px;
+  object-fit: contain;
+}
+
+/* Alineación del contenido del pie */
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-row p {
+  max-width: 620px;
+  margin: 0;
+  text-align: right;
+}
+
+/* Móvil */
+@media (max-width: 490px) {
+  .brand-logo {
+    height: 39px;
+    max-width: 175px;
+  }
+
+  .footer-logo {
+    height: 39px;
+    max-width: 175px;
+  }
+
+  .footer-row p {
+    margin-top: 14px;
+    text-align: left;
+  }
+}
   </style>
 </head>
 <body>
@@ -318,7 +387,7 @@
       <a class="brand" href="#inicio" aria-label="Ir al inicio de Tus Cirios">
   <img
     class="brand-logo"
-    src="images/1.png"
+    src="logo negro.png"
     alt="Tus Cirios"
   >
 </a>
@@ -535,7 +604,7 @@
     <a class="footer-brand" href="#inicio" aria-label="Ir al inicio de Tus Cirios">
   <img
     class="footer-logo"
-    src="images/1.png"
+    src="logo blanco.png"
     alt="Tus Cirios"
   >
 </a>
