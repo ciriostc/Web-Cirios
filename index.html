@@ -64,7 +64,7 @@
     .hero:before, .hero:after { content: ''; position: absolute; border-radius: 50%; filter: blur(1px); opacity: .65; }
     .hero:before { width: 320px; height: 320px; right: -90px; bottom: -170px; background: var(--lilac); }
     .hero:after { width: 145px; height: 145px; left: 44%; top: -65px; background: var(--peach); }
-    .hero-grid { position: relative; display: grid; grid-template-columns: 1.03fr .97fr; align-items: center; gap: 68px; }
+    .hero-grid { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, 0.9fr); align-items: center; gap: 68px; }
     .hero h1 { margin: 0; font-size: clamp(3.1rem, 6vw, 5.4rem); letter-spacing: -.04em; }
     .hero h1 em { color: var(--rose-dark); font-weight: 600; }
     .hero-text { max-width: 560px; margin: 24px 0 30px; color: var(--muted); font-size: 1.08rem; }
