@@ -100,12 +100,51 @@
     .product a { margin-top: 20px; color: var(--rose-dark); font-size: .9rem; font-weight: 700; }
 
     .gallery { background: var(--paper); }
-    .gallery-grid { display: grid; grid-template-columns: 1.15fr .85fr .85fr; grid-template-rows: 230px 230px; gap: 15px; }
-    .gallery-item { overflow: hidden; position: relative; border-radius: 16px; background: var(--lilac); }
-    .gallery-item:first-child { grid-row: span 2; }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
-    .gallery-item:hover img { transform: scale(1.04); }
-    .gallery-item .label { position: absolute; bottom: 11px; left: 11px; padding: 6px 10px; color: white; background: rgba(62, 54, 52, .66); border-radius: 999px; font-size: .76rem; font-weight: 600; }
+    .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.gallery-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  margin: 0;
+  padding: 14px;
+  overflow: hidden;
+  background: #f8eee9;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.45s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-item .label {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  z-index: 1;
+  padding: 6px 11px;
+  color: white;
+  background: rgba(62, 54, 52, 0.72);
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+    
 
     .steps { background: #eaf1eb; }
     .steps-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 68px; align-items: center; }
@@ -142,8 +181,10 @@
       .values { grid-template-columns: 1fr; }
       .value { min-height: auto; }
       .value b { margin-top: 12px; }
-      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 240px 170px 170px; }
-      .gallery-item:first-child { grid-column: span 2; grid-row: auto; }
+      .gallery-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
       .section { padding: 70px 0; }
     }
     @media (max-width: 490px) {
@@ -158,7 +199,14 @@
       .stamp { width: 96px; height: 96px; font-size: .72rem; }
       .section-head { display: block; }
       .section-head p { margin-top: 13px; }
-      .gallery-grid { gap: 9px; grid-template-rows: 190px 130px 130px; }
+      .gallery-grid {
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.gallery-item {
+  aspect-ratio: 4 / 3;
+}
       .contact-card { padding: 24px; }
       .footer-row { display: block; }
       .footer-row p { margin: 8px 0 0; }
@@ -548,23 +596,54 @@
 </section>
 
     <section class="gallery section" id="galeria" aria-labelledby="galeria-title">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Trabajos realizados</p>
-            <h2 id="galeria-title">Algunos cirios que ya tienen historia.</h2>
-          </div>
-          <p>Una muestra de creaciones realizadas por Teresa. Cada nuevo cirio se elabora de forma única.</p>
-        </div>
-        <div class="gallery-grid">
-          <figure class="gallery-item"><img src="images/bautizo%201.jpg" alt="Ejemplo de cirio personalizado de bautizo"><figcaption class="label">Bautizo</figcaption></figure>
-          <figure class="gallery-item"><img src="images/bautizo%203.jpg" alt="Detalle de cirio de bautizo"><figcaption class="label">Bautizo</figcaption></figure>
-          <figure class="gallery-item"><img src="images/virgen%201.jpg" alt="Ejemplo de cirio dedicado a la Virgen"><figcaption class="label">Cirio de la Virgen</figcaption></figure>
-          <figure class="gallery-item"><img src="images/bautizo%205.jpg" alt="Otro ejemplo de cirio de bautizo"><figcaption class="label">Bautizo</figcaption></figure>
-          <figure class="gallery-item"><img src="images/virgen%204.jpg" alt="Detalle de decoración de un cirio"><figcaption class="label">Detalle artesanal</figcaption></figure>
-        </div>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Trabajos realizados</p>
+        <h2 id="galeria-title">Algunos cirios que ya tienen historia.</h2>
       </div>
-    </section>
+
+      <p>
+        Una muestra de creaciones realizadas por Teresa. Cada nuevo cirio
+        se elabora de forma única.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item">
+        <img
+          src="images/bautizo%201.jpg"
+          alt="Cirio personalizado para bautizo"
+        >
+        <figcaption class="label">Bautizo</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img
+          src="images/bautizo%205.jpg"
+          alt="Cirio personalizado de diseño sencillo"
+        >
+        <figcaption class="label">Sencillo</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img
+          src="images/virgen%201.jpg"
+          alt="Cirio personalizado de la Virgen"
+        >
+        <figcaption class="label">Virgen</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img
+          src="images/virgen%204.jpg"
+          alt="Otro ejemplo de cirio personalizado"
+        >
+        <figcaption class="label">Otras imágenes</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
     <section class="steps section" id="encargo" aria-labelledby="encargo-title">
       <div class="wrap steps-grid">
