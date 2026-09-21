@@ -166,7 +166,7 @@
     .contact-card h3 { margin: 0 0 18px; font-size: 1.65rem; }
     .contact-link { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-top: 1px solid var(--line); font-size: 1.02rem; font-weight: 700; }
     .contact-link:first-of-type { border-top: 0; }
-    .contact-symbol { width: 34px; height: 34px; display: grid; place-items: center; color: var(--light-bronze); background: #f7e6df; border-radius: 50%; }
+    .material-symbols-rounded { display: grid; place-items: center; flex: 0 0 34px; width: 34px; height: 34px; color: var(--rose-dark); background: #f7e6df; border-radius: 50%; font-size: 20px; font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;}
     .contact-note { margin: 17px 0 0; color: var(--muted); font-size: .82rem; }
 
     footer { padding: 26px 0; color: var(--muted); background: #3e3a3a; font-size: .84rem; }
@@ -672,8 +672,15 @@
         </div>
         <div class="contact-card">
           <h3>Contacto</h3>
-          <a class="contact-link" href="tel:+34644713253"><span class="contact-symbol">☎</span><span>644 71 32 53</span></a>
-          <a class="contact-link" href="mailto:cirios.tc@gmail.com"><span class="contact-symbol">✉</span><span>cirios.tc@gmail.com</span></a>
+          <a class="contact-link" href="tel:+34644713253">
+  <span class="material-symbols-rounded" aria-hidden="true">call</span>
+  <span>644 71 32 53</span>
+</a>
+
+<a class="contact-link" href="mailto:cirios.tc@gmail.com">
+  <span class="material-symbols-rounded" aria-hidden="true">mail</span>
+  <span>cirios.tc@gmail.com</span>
+</a>
           <p class="contact-note">Los pedidos se gestionan de forma personal, sin pago en la web.</p>
         </div>
       </div>
