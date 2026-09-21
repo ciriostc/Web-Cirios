@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Galería de cirios personalizados hechos a mano por Teresa Calvo. Filtra por bautizo, Virgen y otros diseños.">
+  <title>Galería | Tus Cirios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0"
+  rel="stylesheet"
+>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="nav wrap" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir al inicio de Tus Cirios">
+        <img
+          class="brand-logo"
+          src="images/logo negro.png"
+          alt="Tus Cirios"
+        >
+      </a>
+      <div class="nav-links">
+        <a href="index.html#coleccion">Colección</a>
+        <a href="galeria.html">Galería</a>
+        <a href="index.html#encargo">Tu encargo</a>
+        <a class="nav-cta" href="index.html#contacto">Contactar</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery section" id="galeria" aria-labelledby="galeria-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Trabajos realizados</p>
+            <h2 id="galeria-title">Algunos cirios que ya tienen historia.</h2>
+          </div>
+
+          <p>
+            Una muestra de creaciones realizadas por Teresa. Cada nuevo cirio
+            se elabora de forma única.
+          </p>
+        </div>
+
+        <div class="gallery-filters" role="group" aria-label="Filtrar galería por categoría">
+          <button type="button" class="filter-btn is-active" data-filter="todos">Todos</button>
+          <button type="button" class="filter-btn" data-filter="bautizo">Bautizo</button>
+          <button type="button" class="filter-btn" data-filter="virgen">Virgen</button>
+          <button type="button" class="filter-btn" data-filter="otras">Otras imágenes</button>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item" data-tags="bautizo">
+            <img
+              src="images/bautizo%201.jpg"
+              alt="Cirio personalizado para bautizo"
+            >
+            <figcaption class="label">Bautizo</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-tags="bautizo sencillo">
+            <img
+              src="images/bautizo%205.jpg"
+              alt="Cirio personalizado de diseño sencillo"
+            >
+            <figcaption class="label">Sencillo</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-tags="virgen">
+            <img
+              src="images/virgen%201.jpg"
+              alt="Cirio personalizado de la Virgen"
+            >
+            <figcaption class="label">Virgen</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-tags="virgen">
+            <img
+              src="images/virgen%20icono.jpg"
+              alt="Icono de la Virgen personalizado"
+            >
+            <figcaption class="label">Virgen</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-tags="otras">
+            <img
+              src="images/otras%20Leon.jpg"
+              alt="Cirio personalizado, otro diseño"
+            >
+            <figcaption class="label">Otras imágenes</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-tags="otras">
+            <img
+              src="images/otras%20san%20juan.jpg"
+              alt="Cirio personalizado de San Juan"
+            >
+            <figcaption class="label">Otras imágenes</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-tags="otras">
+            <img
+              src="images/Otras%203.jpg"
+              alt="Otro ejemplo de cirio personalizado"
+            >
+            <figcaption class="label">Otras imágenes</figcaption>
+          </figure>
+        </div>
+
+        <p class="gallery-empty" hidden>No hay cirios en esta categoría todavía.</p>
+
+        <div class="gallery-back">
+          <a class="button secondary" href="index.html">← Volver al inicio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <a class="footer-brand" href="index.html" aria-label="Ir al inicio de Tus Cirios">
+        <img
+          class="footer-logo"
+          src="images/logo blanco.png"
+          alt="Tus Cirios"
+        >
+      </a>
+      <p>Cirios personalizados hechos a mano por Teresa Calvo · Con cariño para tus momentos importantes.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
