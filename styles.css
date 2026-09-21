@@ -81,6 +81,9 @@ header {
 .catalogue { background: linear-gradient(180deg, #fffaf4 0%, #f7eee9 100%); }
 .section-head { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 38px; }
 .section-head p { max-width: 500px; margin: 0; color: var(--muted); }
+
+.gallery-head { display: block; }
+.gallery-head p { max-width: none; margin: 16px 0 0; }
 .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .product { display: flex; flex-direction: column; padding: 28px; background: var(--paper); border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 8px 22px rgba(113, 78, 68, .05); }
 .product.top { background: #fff5ef; border-color: #ecd1c5; }
@@ -92,7 +95,7 @@ header {
 
 .gallery-teaser { background: var(--paper); }
 .gallery-teaser h2 { margin-bottom: 18px; }
-.gallery-teaser-text { max-width: 640px; margin: 0 0 34px; color: var(--muted); }
+.gallery-teaser-text { max-width: none; margin: 0 0 34px; color: var(--muted); }
 .gallery-teaser-examples { margin-bottom: 34px; }
 .gallery-teaser-cta { text-align: center; }
 
