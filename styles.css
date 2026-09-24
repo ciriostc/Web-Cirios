@@ -471,3 +471,27 @@ footer strong { color: #fff6ef; font-family: 'Playfair Display', serif; font-siz
     text-align: left;
   }
 }
+
+/* Dos líneas de crédito junto al logo */
+.footer-credit {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+
+.footer-credit a,
+.footer-credit a:visited {
+  color: #fff;
+}
+
+.footer-credit a:hover,
+.footer-credit a:focus-visible {
+  text-decoration: underline;
+}
+
+@media (max-width: 490px) {
+  .footer-credit {
+    text-align: left;
+  }
+}
