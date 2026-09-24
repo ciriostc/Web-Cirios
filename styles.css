@@ -492,6 +492,6 @@ footer strong { color: #fff6ef; font-family: 'Playfair Display', serif; font-siz
 
 @media (max-width: 490px) {
   .footer-credit {
-    text-align: left;
+    text-align: right;
   }
 }
