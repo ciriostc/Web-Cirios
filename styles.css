@@ -483,7 +483,7 @@ footer strong { color: #fff6ef; font-family: 'Playfair Display', serif; font-siz
 
 .footer-credit a,
 .footer-credit a:visited {
-  color: #fff;
+  color: #BAE8E1;
   text-decoration: underline;
   text-decoration-color: currentColor; /* o un color concreto, ej: #4ce0d1 */
   text-decoration-thickness: 1px;
